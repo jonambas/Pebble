@@ -30,7 +30,7 @@
    ========================================================================== */
 
 /* Import the font file with the icons in it */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/
 @import url(http://fonts.googleapis.com/css?family=Muli);
 
 @font-face {
@@ -42,6 +42,35 @@
         url('../fonts/icons.svg#icons') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'monb';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monr';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Load SVG on webkit browsers */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'monr';
+        src: url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    }
 }
 
 /* Apply these base styles to all icons */
@@ -94,7 +123,7 @@ body {
     font-size: 1.6em;
     line-height: 2em;
     background-color: #fafafa;
-    color: #777;
+    color: #6a6a6a;
     font-weight: 400;
 }
 
@@ -109,13 +138,18 @@ body {
     background: #D6EDFF;
     text-shadow: none;
 }
+/* SVG bug when changing font color */
+h1::selection, h2::selection, h3::selection, h4::selection, 
+h5::selection, h6::selection, h2 a::selection{
+    color: inherit;
+}
 
 h1, h2, h3,
 h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
     margin-top: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'monr', sans-serif;
     color: #404040;
     letter-spacing: 3px;
     text-transform: uppercase;;
@@ -428,7 +462,7 @@ table.plain {
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'monr', sans-serif;
     letter-spacing: 3px;
     font-size: 1.2rem;
     color: #999;
@@ -506,7 +540,7 @@ table.plain {
 .post-template .post-header {
     padding: 35px 0;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'monr', sans-serif;
     
     font-size: 2rem;
     text-transform: uppercase;
@@ -777,7 +811,7 @@ h2.post-title{
     font-size: 1.4rem;
     line-height: 30px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'monr', sans-serif;
     letter-spacing: 0;
     color: #999;
     text-transform: uppercase;
@@ -788,7 +822,7 @@ h2.post-title{
     width: 86%;
     max-width: 860px;
     margin: 4rem auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'monr', sans-serif;
     font-size: 1.2rem;
     
     text-align: center;
