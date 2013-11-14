@@ -139,43 +139,38 @@ pre, blockquote {
     margin: 4rem 0 0 0;
     padding: 4rem 0 0 0;
     border-top: #ccc 1px solid;
+    h4{
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0 0 1rem 0;
+    }
+    p{
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        line-height: 1.6em;
+    }
+    .author{
+        margin-right: 180px;
+    }
+    .share{
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        width: 140px;
+        a{
+            font-size: 2.4rem;
+            display: inline-block;
+            margin: 0 1rem 1rem 0;
+            color: #bababa;
+            &:hover, &:active, &:focus{
+                color: #50585D;
+                @include transform(translateY(-1px));
+            }
+        }
+    }
 }
 
-.post-footer h4 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin: 0 0 1rem 0;
-}
-
-.post-footer p {
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    line-height: 1.6em;
-}
-
-.post-footer .author {
-    margin-right: 180px;
-}
-
-.post-footer .share {
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    width: 140px;
-}
-
-.post-footer .share a {
-    font-size: 2.4rem;
-    display: inline-block;
-    margin: 0 1rem 1rem 0;
-    color: #bababa;
-}
-
-.post-footer .share a:hover {
-    color: #50585D;
-    @include transform(translateY(-1px));
-}
 
 //Code stuff
 code, tt {
@@ -270,6 +265,9 @@ hr {
     border: none;
     text-decoration: none;
     transition: color ease 0.3s;
+    &:hover, &:active, &:focus{
+        color: #57A3E8;
+    }
 }
 
 .older-posts {
@@ -283,11 +281,6 @@ hr {
 
 .newer-posts {
     left: 0;
-}
-
-.older-posts:hover,
-.newer-posts:hover {
-    color: #57A3E8;
 }
 
 //Untouched - straight from Ghost's Casper theme
