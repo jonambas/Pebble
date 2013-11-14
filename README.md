@@ -1,10 +1,10 @@
 # Pebble
 
-A theme for [Ghost](http://github.com/tryghost/ghost/) v0.3.3.
+####A theme for [Ghost](http://github.com/tryghost/ghost/) v0.3.3.
 
-[Live Demo](http://blog.jonambas.com)
+####[Live Demo](http://blog.jonambas.com)
 
-_Sass is a bit messy, as it is built off of Ghost's Casper theme.  I'm working on cleaning it up._
+_This is built off of Ghost's Casper theme. As a result, the Sass is a little disorganized. I'm working on cleaning it up._
 
 ##License
 
