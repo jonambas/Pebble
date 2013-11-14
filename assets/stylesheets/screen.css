@@ -108,7 +108,12 @@ h4 a, h5 a, h6 a {
   color: #404040;
 }
 
-/* line 106, ../sass/_typography.scss */
+/* line 105, ../sass/_typography.scss */
+b, strong {
+  font-family: "monb", sans-serif;
+}
+
+/* line 110, ../sass/_typography.scss */
 .post-header.index .post-title {
   font-family: "monr", sans-serif;
   font-size: 1.8rem;
@@ -117,12 +122,12 @@ h4 a, h5 a, h6 a {
   letter-spacing: 3px;
   line-height: 1.8rem;
 }
-/* line 111, ../sass/_typography.scss */
+/* line 115, ../sass/_typography.scss */
 .post-header.index .post-title a {
   text-decoration: none;
 }
 
-/* line 117, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .post-meta {
   font-family: "monr", sans-serif;
   font-size: 1.2rem;
@@ -132,7 +137,7 @@ h4 a, h5 a, h6 a {
   color: #999;
 }
 
-/* line 124, ../sass/_typography.scss */
+/* line 128, ../sass/_typography.scss */
 .blog-title, #blog-logo, .post-template .post-header a {
   font-family: "monb", sans-serif;
   font-size: 2rem;
@@ -145,7 +150,7 @@ h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
-/* line 134, ../sass/_typography.scss */
+/* line 138, ../sass/_typography.scss */
 .blog-description {
   font-family: "monr", sans-serif;
   font-size: 1.4rem;
@@ -156,18 +161,18 @@ h4 a, h5 a, h6 a {
   text-transform: uppercase;
 }
 
-/* line 142, ../sass/_typography.scss */
+/* line 146, ../sass/_typography.scss */
 code, tt, pre {
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 1.4rem;
 }
 
-/* line 147, ../sass/_typography.scss */
+/* line 151, ../sass/_typography.scss */
 blockquote {
   color: #8a8a8a;
 }
 
-/* line 151, ../sass/_typography.scss */
+/* line 155, ../sass/_typography.scss */
 .pagination {
   font-family: "monr", sans-serif;
   font-size: 1.2rem;
@@ -178,12 +183,12 @@ blockquote {
   color: #999;
 }
 
-/* line 160, ../sass/_typography.scss */
+/* line 164, ../sass/_typography.scss */
 .pagination a {
   color: #999;
 }
 
-/* line 164, ../sass/_typography.scss */
+/* line 168, ../sass/_typography.scss */
 .site-footer {
   font-family: "Muli", sans-serif;
   font-size: 1rem;
@@ -194,13 +199,13 @@ blockquote {
   letter-spacing: 1px;
 }
 
-/* line 172, ../sass/_typography.scss */
+/* line 176, ../sass/_typography.scss */
 .site-footer a {
   color: #ccc;
   text-decoration: none;
 }
 
-/* line 177, ../sass/_typography.scss */
+/* line 181, ../sass/_typography.scss */
 .site-footer a:hover {
   color: #eee;
 }
