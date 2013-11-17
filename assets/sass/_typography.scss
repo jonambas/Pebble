@@ -22,7 +22,7 @@
     font-style: normal;
 }
 
-/* Load SVG on webkit browsers */
+/* Force SVG on webkit browsers (Chrome on Windows font fix) */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: 'monr';
@@ -38,12 +38,7 @@ $montb: 'monb', sans-serif;
 $blue: #57A3E8;
 
 html {
-    font-size: 10px;
-    /*
     font-size: 62.5%;
-    Don't do this.
-    This assumes users have a 16pt os default font size.
-    */
 }
 
 body {
