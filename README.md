@@ -2,8 +2,6 @@
 
 ####A theme for [Ghost](http://github.com/tryghost/ghost/) v0.3.3.
 
-####[Live Demo](http://blog.jonambas.com)
-
 
 ##License
 
